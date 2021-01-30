@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  margin: 0;
+}
+
+.content {
+  width: 100%;
+  margin: auto;
+  background-color: #F5DF4D;
+}
+
+@font-face {
+  font-family: "mattoneregular";
+  src: url("../../fonts/mattone-regular-webfont.eot");
+  src: url("../../fonts/mattone-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/mattone-regular-webfont.woff2") format("woff2"), url("../../fonts/mattone-regular-webfont.woff") format("woff"), url("../../fonts/mattone-regular-webfont.ttf") format("truetype"), url("../../fonts/mattone-regular-webfont.svg#mattoneregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+h1 {
+  font-family: sans-serif;
+}
+
+.grid {
+  width: 80%;
+  margin: auto;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-top: 30vh;
+  padding-bottom: 30vh;
+}
+.grid__item {
+  width: 15%;
+  height: 50vh;
+  background-color: #939597;
+  margin-bottom: 12.5vh;
+}
+
+footer {
+  background-color: #939597;
+  font-family: "mattoneregular", sans-serif;
+  padding-top: 30vh;
+  padding-bottom: 30vh;
+  font-size: 1rem;
+  color: #F5DF4D;
+}
+footer p {
+  width: 80%;
+  margin: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

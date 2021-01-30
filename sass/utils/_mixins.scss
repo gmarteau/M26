@@ -1,0 +1,16 @@
+@mixin font($font) {
+    @if ($font == "mattone") {
+        font-family: 'mattoneregular', sans-serif;
+    }
+    @else if ($font == "okta") {
+        font-family: sans-serif;
+    }
+    @else if ($font == "okta-light") {
+        font-family: sans-serif;
+    }
+};
+
+@mixin section-padding {
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+}

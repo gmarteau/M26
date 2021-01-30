@@ -1,0 +1,19 @@
+{
+  "name": "m26",
+  "version": "1.0.0",
+  "description": "Secret project until a certain date.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmarteau/M26.git"
+  },
+  "author": "Guillaume Marteau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gmarteau/M26/issues"
+  },
+  "homepage": "https://github.com/gmarteau/M26#readme"
+}

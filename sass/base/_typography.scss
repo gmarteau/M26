@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'mattoneregular';
+    src: url('../../fonts/mattone-regular-webfont.eot');
+    src: url('../../fonts/mattone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/mattone-regular-webfont.woff2') format('woff2'),
+         url('../../fonts/mattone-regular-webfont.woff') format('woff'),
+         url('../../fonts/mattone-regular-webfont.ttf') format('truetype'),
+         url('../../fonts/mattone-regular-webfont.svg#mattoneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    @include font(okta);
+}
