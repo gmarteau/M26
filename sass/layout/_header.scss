@@ -1,0 +1,9 @@
+header {
+    height: $hdr-height;
+    background-color: $clr-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $clr-txt;
+    font-size: map-get($map: $font-size, $key: big);
+}

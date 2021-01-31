@@ -3,14 +3,18 @@
         font-family: 'mattoneregular', sans-serif;
     }
     @else if ($font == "okta") {
-        font-family: sans-serif;
+        font-family: 'oktabold_italic', sans-serif;
     }
     @else if ($font == "okta-light") {
-        font-family: sans-serif;
+        font-family: 'oktaextralight', sans-serif;
     }
 };
 
 @mixin section-padding {
     padding-top: $section-padding;
     padding-bottom: $section-padding;
+}
+
+@mixin item-style {
+    box-shadow: -$item-shadow $item-shadow $clr-txt;
 }

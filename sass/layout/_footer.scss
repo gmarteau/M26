@@ -1,9 +1,10 @@
 footer {
     background-color: $clr-primary;
+    height: $ftr-height;
     @include font(mattone);
     @include section-padding;
     font-size: map-get($font-size, med);
-    color: $clr-secondary;
+    color: $clr-txt;
     p {
         width: 80%;
         margin: auto;

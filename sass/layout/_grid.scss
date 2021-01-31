@@ -11,5 +11,6 @@
         height: $item-height;
         background-color: $clr-primary;
         margin-bottom: $item-height / 4;
+        @include item-style;
     }
 }
