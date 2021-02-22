@@ -1,39 +1,38 @@
 @font-face {
     font-family: 'mattoneregular';
-    src: url('../../fonts/mattone-regular-webfont.eot');
-    src: url('../../fonts/mattone-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/mattone-regular-webfont.woff2') format('woff2'),
-         url('../../fonts/mattone-regular-webfont.woff') format('woff'),
-         url('../../fonts/mattone-regular-webfont.ttf') format('truetype'),
-         url('../../fonts/mattone-regular-webfont.svg#mattoneregular') format('svg');
+    src: url('../fonts/mattone-regular-webfont.eot');
+    src: url('../fonts/mattone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mattone-regular-webfont.woff2') format('woff2'),
+         url('../fonts/mattone-regular-webfont.woff') format('woff'),
+         url('../fonts/mattone-regular-webfont.ttf') format('truetype'),
+         url('../fonts/mattone-regular-webfont.svg#mattoneregular') format('svg');
     font-weight: normal;
     font-style: normal;
-}
 
-@font-face {
-    font-family: 'oktaextralight';
-    src: url('../../fonts/okta-extralight-webfont.eot');
-    src: url('../../fonts/okta-extralight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/okta-extralight-webfont.woff2') format('woff2'),
-         url('../../fonts/okta-extralight-webfont.woff') format('woff'),
-         url('../../fonts/okta-extralight-webfont.ttf') format('truetype'),
-         url('../../fonts/okta-extralight-webfont.svg#oktaextralight') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }
 
 @font-face {
     font-family: 'oktabold_italic';
-    src: url('../../fonts/okta-bolditalic-webfont.eot');
-    src: url('../../fonts/okta-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/okta-bolditalic-webfont.woff2') format('woff2'),
-         url('../../fonts/okta-bolditalic-webfont.woff') format('woff'),
-         url('../../fonts/okta-bolditalic-webfont.ttf') format('truetype'),
-         url('../../fonts/okta-bolditalic-webfont.svg#oktabold_italic') format('svg');
+    src: url('../fonts/okta-bolditalic-webfont.eot');
+    src: url('../fonts/okta-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/okta-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/okta-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/okta-bolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/okta-bolditalic-webfont.svg#oktabold_italic') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 
-h1 {
-    @include font(okta);
+@font-face {
+    font-family: 'oktaextralight';
+    src: url('../fonts/okta-extralight-webfont.eot');
+    src: url('../fonts/okta-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/okta-extralight-webfont.woff2') format('woff2'),
+         url('../fonts/okta-extralight-webfont.woff') format('woff'),
+         url('../fonts/okta-extralight-webfont.ttf') format('truetype'),
+         url('../fonts/okta-extralight-webfont.svg#oktaextralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }

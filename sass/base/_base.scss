@@ -11,4 +11,8 @@ body {
     width: 100%;
     margin: auto;
     background: $clr-bg;
+    &.content--message {
+        padding-top: $content-pdg;
+        padding-bottom: $content-pdg * 1.5;
+    }
 }

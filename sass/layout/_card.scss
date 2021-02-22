@@ -1,0 +1,27 @@
+.card {
+    width: 70%;
+    margin: auto;
+    height: $card-height;
+    display: flex;
+    justify-content: space-around;
+    background-color: $clr-txt;
+    color: $clr-primary;
+    @include card-shadow;
+    @include font(mattone);
+    padding-top: $card-pdg;
+    padding-bottom: $card-pdg;
+    &__pic {
+        width: $card-part-width;
+        background-color: $clr-primary;
+    }
+    &__message {
+        width: $card-part-width;
+        &__author {
+            @include author-font;
+        }
+        &__txt {
+            font-size: map-get($map: $font-size, $key: med);
+            line-height: 2;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-header {
+.header {
     height: $hdr-height;
     background-color: $clr-primary;
     display: flex;
@@ -6,4 +6,17 @@ header {
     align-items: center;
     color: $clr-txt;
     font-size: map-get($map: $font-size, $key: big);
+    @include font(okta);
+    position: relative;
+    &__return {
+        position: absolute;
+        top: $hdr-return-pos;
+        left: $hdr-return-pos * 2;
+        color: $clr-txt;
+        font-size: map-get($map: $font-size, $key: big-min);
+    }
+    &.header--return {
+        height: $hdr-height * .6;
+        color: $clr-bg;
+    }
 }

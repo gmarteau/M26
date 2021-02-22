@@ -10,42 +10,55 @@ body {
 .content {
   width: 100%;
   margin: auto;
-  background: #8da7beff;
+  background: #CE713B;
+}
+.content.content--message {
+  padding-top: 80px;
+  padding-bottom: 120px;
 }
 
 @font-face {
   font-family: "mattoneregular";
-  src: url("../../fonts/mattone-regular-webfont.eot");
-  src: url("../../fonts/mattone-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/mattone-regular-webfont.woff2") format("woff2"), url("../../fonts/mattone-regular-webfont.woff") format("woff"), url("../../fonts/mattone-regular-webfont.ttf") format("truetype"), url("../../fonts/mattone-regular-webfont.svg#mattoneregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "oktaextralight";
-  src: url("../../fonts/okta-extralight-webfont.eot");
-  src: url("../../fonts/okta-extralight-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/okta-extralight-webfont.woff2") format("woff2"), url("../../fonts/okta-extralight-webfont.woff") format("woff"), url("../../fonts/okta-extralight-webfont.ttf") format("truetype"), url("../../fonts/okta-extralight-webfont.svg#oktaextralight") format("svg");
+  src: url("../fonts/mattone-regular-webfont.eot");
+  src: url("../fonts/mattone-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/mattone-regular-webfont.woff2") format("woff2"), url("../fonts/mattone-regular-webfont.woff") format("woff"), url("../fonts/mattone-regular-webfont.ttf") format("truetype"), url("../fonts/mattone-regular-webfont.svg#mattoneregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "oktabold_italic";
-  src: url("../../fonts/okta-bolditalic-webfont.eot");
-  src: url("../../fonts/okta-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/okta-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/okta-bolditalic-webfont.woff") format("woff"), url("../../fonts/okta-bolditalic-webfont.ttf") format("truetype"), url("../../fonts/okta-bolditalic-webfont.svg#oktabold_italic") format("svg");
+  src: url("../fonts/okta-bolditalic-webfont.eot");
+  src: url("../fonts/okta-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/okta-bolditalic-webfont.woff2") format("woff2"), url("../fonts/okta-bolditalic-webfont.woff") format("woff"), url("../fonts/okta-bolditalic-webfont.ttf") format("truetype"), url("../fonts/okta-bolditalic-webfont.svg#oktabold_italic") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-h1 {
-  font-family: "oktabold_italic", sans-serif;
+@font-face {
+  font-family: "oktaextralight";
+  src: url("../fonts/okta-extralight-webfont.eot");
+  src: url("../fonts/okta-extralight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/okta-extralight-webfont.woff2") format("woff2"), url("../fonts/okta-extralight-webfont.woff") format("woff"), url("../fonts/okta-extralight-webfont.ttf") format("truetype"), url("../fonts/okta-extralight-webfont.svg#oktaextralight") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
-
-header {
+.header {
   height: 200px;
-  background-color: #210124ff;
+  background-color: #210124;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #ffd8beff;
   font-size: 3rem;
+  font-family: "oktabold_italic", sans-serif;
+  position: relative;
+}
+.header__return {
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+  color: #ffd8beff;
+  font-size: 2rem;
+}
+.header.header--return {
+  height: 120px;
+  color: #CE713B;
 }
 
 .grid {
@@ -61,13 +74,42 @@ header {
 .grid__item {
   width: 15%;
   height: 250px;
-  background-color: #210124ff;
+  background-color: #210124;
   margin-bottom: 62.5px;
   box-shadow: -1rem 1rem #ffd8beff;
 }
 
+.card {
+  width: 70%;
+  margin: auto;
+  height: 800px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffd8beff;
+  color: #210124;
+  box-shadow: -2rem 2rem #210124;
+  font-family: "mattoneregular", sans-serif;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.card__pic {
+  width: 40%;
+  background-color: #210124;
+}
+.card__message {
+  width: 40%;
+}
+.card__message__author {
+  font-size: 3rem;
+  font-weight: normal;
+}
+.card__message__txt {
+  font-size: 1rem;
+  line-height: 2;
+}
+
 footer {
-  background-color: #210124ff;
+  background-color: #210124;
   height: 200px;
   font-family: "mattoneregular", sans-serif;
   padding-top: 100px;

@@ -8,7 +8,7 @@
     @else if ($font == "okta-light") {
         font-family: 'oktaextralight', sans-serif;
     }
-};
+}
 
 @mixin section-padding {
     padding-top: $section-padding;
@@ -17,4 +17,13 @@
 
 @mixin item-style {
     box-shadow: -$item-shadow $item-shadow $clr-txt;
+}
+
+@mixin card-shadow {
+    box-shadow: -$card-shadow $card-shadow $clr-primary;
+}
+
+@mixin author-font {
+    font-size: map-get($map: $font-size, $key: big);
+    font-weight: normal;
 }
