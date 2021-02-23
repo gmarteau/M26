@@ -4,7 +4,7 @@
     height: $card-height;
     display: flex;
     justify-content: space-around;
-    background-color: $clr-txt;
+    background-color: $clr-secondary;
     color: $clr-primary;
     @include card-shadow;
     @include font(mattone);
@@ -12,7 +12,19 @@
     padding-bottom: $card-pdg;
     &__pic {
         width: $card-part-width;
-        background-color: $clr-primary;
+        border: solid 5px $clr-tertiary;
+        border-radius: $img-radius;
+        overflow: hidden;
+        position: relative;
+        &__opac {
+            @include div-fill-container;
+            @include img-transition;
+        }
+        &:hover {
+            .card__pic__opac {
+                opacity: 1;
+            }
+        }
     }
     &__message {
         width: $card-part-width;

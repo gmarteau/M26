@@ -12,5 +12,15 @@
         background-color: $clr-primary;
         margin-bottom: $item-height / 4;
         @include item-style;
+        position: relative;
+        &__opac {
+            @include div-fill-container;
+            @include img-transition;
+        }
+        &:hover {
+            .grid__item__opac {
+                opacity: 1;
+            }
+        }
     }
 }

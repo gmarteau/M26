@@ -4,7 +4,7 @@ footer {
     @include font(mattone);
     @include section-padding;
     font-size: map-get($font-size, med);
-    color: $clr-txt;
+    color: $clr-secondary;
     p {
         width: 80%;
         margin: auto;
