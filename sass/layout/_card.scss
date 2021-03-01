@@ -66,12 +66,20 @@
         }
         &__txt {
             margin-top: 80px;
+            margin-bottom: 50px;
             font-size: map-get($map: $font-size, $key: med-meh);
             line-height: 2;
             @include mobile-only {
                 margin-top: 50px;
+                margin-bottom: 25px;
                 font-size: map-get($map: $font-size, $key: med);
             }
+        }
+    }
+    &__audio {
+        width: 50%;
+        @include mobile-only {
+            width: 100%;
         }
     }
 }

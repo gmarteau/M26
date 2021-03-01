@@ -97,8 +97,9 @@ body {
 }
 @media screen and (max-width: 599px) {
   .grid {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 33.3333333333px;
+    padding-bottom: 33.3333333333px;
+    width: 85%;
   }
 }
 .grid__item {
@@ -116,7 +117,7 @@ body {
   .grid__item {
     width: 47%;
     height: 150px;
-    margin-bottom: 37.5px;
+    margin-bottom: 25px;
     box-shadow: -0.5rem 0.5rem #92DCE5;
     border: solid 3px #92DCE5;
   }
@@ -216,13 +217,23 @@ body {
 }
 .card__message__txt {
   margin-top: 80px;
+  margin-bottom: 50px;
   font-size: 1.1rem;
   line-height: 2;
 }
 @media screen and (max-width: 599px) {
   .card__message__txt {
     margin-top: 50px;
+    margin-bottom: 25px;
     font-size: 1rem;
+  }
+}
+.card__audio {
+  width: 50%;
+}
+@media screen and (max-width: 599px) {
+  .card__audio {
+    width: 100%;
   }
 }
 
@@ -246,6 +257,12 @@ footer {
 footer p {
   width: 80%;
   margin: auto;
+  text-align: center;
+}
+@media screen and (max-width: 599px) {
+  footer p {
+    text-align: left;
+  }
 }
 
 .img {

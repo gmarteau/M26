@@ -3,6 +3,7 @@ const photoBack = document.querySelector("#photoBack");
 const photoFront = document.querySelector("#photoFront");
 const messageAuthor = document.querySelector(".card__message__author");
 const message = document.querySelector(".card__message__txt");
+const audio = document.querySelector("#audio");
 
 const buildMessagePage = () => {
     let currentPageUrl = window.location.href;
@@ -20,6 +21,7 @@ const buildMessagePage = () => {
                 photoFront.setAttribute("alt", "Guillaume et Marussia sur la plage en Gaspésie");
                 messageAuthor.innerHTML = "Guillaume";
                 message.innerHTML = "C'est la quatrième fois que je te souhaite ton anniversaire aujourd'hui, et je suis toujours aussi excité, comme la première fois.<br /> Voilà mon petit cadeau fait-maison traditionnel, une déclaration d'amour collaborative! Pour que tu continues de rayonner dans ma vie et dans celles de tous tes amis et de ta famille.<br /> Je t'aime.<br /> Joyeux anniversaire <i class='fas fa-heart'></i>";
+                audio.setAttribute("src", "../mus/guillaume.mp3");
         } 
     };
 };

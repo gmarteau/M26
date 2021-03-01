@@ -7,8 +7,9 @@
     justify-content: space-between;
     @include section-padding;
     @include mobile-only {
-        padding-top: $section-padding / 2;
-        padding-bottom: $section-padding / 2;
+        padding-top: $section-padding / 3;
+        padding-bottom: $section-padding / 3;
+        width: 85%;
     }
     &__item {
         width: $item-width;
@@ -22,7 +23,7 @@
         @include mobile-only {
             width: $item-width-mobile;
             height: $item-height-mobile;
-            margin-bottom: $item-height-mobile / 4;
+            margin-bottom: $item-height-mobile / 6;
             @include item-style-mobile;
         }
         &__opac {

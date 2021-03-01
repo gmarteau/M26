@@ -14,5 +14,9 @@ footer {
     p {
         width: 80%;
         margin: auto;
+        text-align: center;
+        @include mobile-only {
+            text-align: left;
+        }
     }
 }
