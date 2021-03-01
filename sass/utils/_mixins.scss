@@ -20,8 +20,17 @@
     border: solid 5px $clr-secondary;
 }
 
+@mixin item-style-mobile {
+    box-shadow: -($item-shadow/2) $item-shadow/2 $clr-secondary;
+    border: solid 3px $clr-secondary;
+}
+
 @mixin card-shadow {
     box-shadow: -$card-shadow $card-shadow $clr-primary;
+}
+
+@mixin card-shadow-mobile {
+    box-shadow: -.5rem .5rem $clr-primary;
 }
 
 @mixin author-font {
@@ -46,4 +55,16 @@
 @mixin img-transition {
     opacity: 0;
     transition: opacity 200ms ease-in-out;
+}
+
+@mixin tablet-only {
+    @media screen and (min-width: map-get($breakpoints, tablet-min)) and (max-width: map-get($breakpoints, tablet-max)) {
+        @content;
+    }
+}
+
+@mixin mobile-only {
+    @media screen and (max-width: map-get($breakpoints, mobile-max)) {
+        @content;
+    }
 }

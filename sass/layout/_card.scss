@@ -6,16 +6,31 @@
     justify-content: space-around;
     background-color: $clr-secondary;
     color: $clr-primary;
+    border-radius: $card-radius;
+    border: solid 7px $clr-primary;
     @include card-shadow;
     @include font(mattone);
     padding-top: $card-pdg;
     padding-bottom: $card-pdg;
+    @include mobile-only {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        width: 90%;
+        height: auto;
+        @include card-shadow-mobile;
+        border: solid 5px $clr-primary;
+        padding: 20px;
+    }
     &__pic {
         width: $card-part-width;
         border: solid 5px $clr-tertiary;
         border-radius: $img-radius;
         overflow: hidden;
         position: relative;
+        @include mobile-only {
+            width: 100%;
+            height: $card-height / 3;
+        }
         &__opac {
             @include div-fill-container;
             @include img-transition;
@@ -28,12 +43,35 @@
     }
     &__message {
         width: $card-part-width;
+        @include mobile-only {
+            width: 100%;
+        }
         &__author {
             @include author-font;
+            position: relative;
+            width: max-content;
+            @include mobile-only {
+                font-size: map-get($map: $font-size, $key: big-min);
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                width: 75%;
+                height: 5px;
+                left: 0;
+                bottom: -20px;
+                background-color: $clr-tertiary;
+                border-radius: 2rem;
+            }    
         }
         &__txt {
-            font-size: map-get($map: $font-size, $key: med);
+            margin-top: 80px;
+            font-size: map-get($map: $font-size, $key: med-meh);
             line-height: 2;
+            @include mobile-only {
+                margin-top: 50px;
+                font-size: map-get($map: $font-size, $key: med);
+            }
         }
     }
 }

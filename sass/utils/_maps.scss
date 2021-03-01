@@ -1,7 +1,15 @@
 $font-size: (
     sml: .7rem,
+    med-min: .9rem,
     med: 1rem,
+    med-meh: 1.1rem,
     med-plus: 1.3rem,
     big-min: 2rem,
     big: 3rem
+);
+
+$breakpoints: (
+    mobile-max: 599px,
+    tablet-min: 600px,
+    tablet-max: 1024px
 );

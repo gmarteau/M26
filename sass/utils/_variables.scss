@@ -1,10 +1,13 @@
-$clr-primary: #210124;
-$clr-secondary: #ffd8beff;
-$clr-tertiary: #CE713B;
+$clr-primary: #111036;
+$clr-secondary: #92DCE5;
+$clr-tertiary: #FBF59B;
 
 $item-height: 250px;
 $item-width: 15%;
+$item-width-mobile: 47%;
+$item-height-mobile: 150px;
 $item-shadow: 1rem;
+$item-radius: 2rem;
 
 $section-padding: 100px;
 
@@ -17,6 +20,7 @@ $content-pdg: 80px;
 
 $card-height: 800px;
 $card-part-width: 40%;
+$card-radius: 2rem;
 $card-shadow: 2rem;
 $card-pdg: $card-height * .1;
 $img-radius: 2rem;

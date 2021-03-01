@@ -8,15 +8,27 @@
     font-size: map-get($map: $font-size, $key: big);
     @include font(okta);
     position: relative;
+    @include mobile-only {
+        height: $hdr-height / 2;
+        font-size: map-get($map: $font-size, $key: med-plus);
+    }
     &__return {
         position: absolute;
         top: $hdr-return-pos;
         left: $hdr-return-pos * 2;
         color: $clr-secondary;
         font-size: map-get($map: $font-size, $key: big-min);
+        @include mobile-only {
+            font-size: map-get($map: $font-size, $key: med);
+            top: 1.9rem;
+            left: 2rem;
+        }
     }
     &.header--return {
         height: $hdr-height * .6;
         color: $clr-tertiary;
+        @include mobile-only {
+            height: $hdr-height / 2.4;
+        }
     }
 }

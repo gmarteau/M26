@@ -5,6 +5,12 @@ footer {
     @include section-padding;
     font-size: map-get($font-size, med);
     color: $clr-secondary;
+    @include mobile-only {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height: auto;
+        font-size: map-get($font-size, med-min);
+    }
     p {
         width: 80%;
         margin: auto;

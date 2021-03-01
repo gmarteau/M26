@@ -14,5 +14,9 @@ body {
     &.content--message {
         padding-top: $content-pdg;
         padding-bottom: $content-pdg * 1.5;
+        @include mobile-only {
+            padding-top: $content-pdg / 4;
+            padding-bottom: $content-pdg / 2;
+        }
     }
 }
