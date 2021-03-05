@@ -5,12 +5,15 @@
     justify-content: center;
     align-items: center;
     color: $clr-secondary;
-    font-size: map-get($map: $font-size, $key: big);
+    font-size: 2.5rem;
     @include font(okta);
     position: relative;
     @include mobile-only {
         height: $hdr-height / 2;
         font-size: map-get($map: $font-size, $key: med-plus);
+    }
+    > .title {
+        font-size: 4rem;
     }
     &__return {
         position: absolute;
