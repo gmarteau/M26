@@ -218,6 +218,9 @@ body {
   background-color: #FBF59B;
   border-radius: 2rem;
 }
+.card__message__author.card__message__author--long {
+  font-size: 2.5rem;
+}
 .card__message__txt {
   margin-top: 80px;
   margin-bottom: 50px;

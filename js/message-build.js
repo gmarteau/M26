@@ -35,7 +35,7 @@ const buildMessagePage = () => {
                 audio.setAttribute("src", "../mus/juliette.mp3");
                 break;
             case "alix":
-                console.log("Message d'Alix'");
+                console.log("Message d'Alix");
                 pageTitle.innerHTML = "Alix";
                 photoBack.setAttribute("src", "../img/alix2.jpg");
                 photoBack.setAttribute("alt", "Alix, Marussia et d'autres amis en soirée");
@@ -45,6 +45,18 @@ const buildMessagePage = () => {
                 message.innerHTML = "Ma Maru d’amour, belle de nuit comme de jour,<br /> Je te souhaite un magnifique anniversaire et une magnifique journée bien entourée,<br /> Et puis en fait je te souhaite tout le bonheur du monde, je t’aime très très très très très fort,<br /> Parce que comme dit Angèle, Que Du Love.<br /> PS: J'ai extrêmement hâte de te retrouver.";
                 audio.setAttribute("src", "../mus/alix.mp3");
                 break;
+            case "darons":
+                console.log("Message de Catherine et Thierry");
+                pageTitle.innerHTML = "Catherine et Thierry";
+                photoBack.setAttribute("src", "../img/darons2.jpg");
+                photoBack.setAttribute("alt", "Marussia, Guillaume et ses parents prennent l'apéro sur la plage en Martinique");
+                photoFront.setAttribute("src", "../img/darons.jpg");
+                photoFront.setAttribute("alt", "Les parents de Guillaume en Martinique");
+                messageAuthor.innerHTML = "Catherine et Thierry";
+                messageAuthor.classList.add("card__message__author--long");
+                message.innerHTML = "";
+                audio.setAttribute("src", "../mus/darons.mp3");
+                break;   
         } 
     };
 };
