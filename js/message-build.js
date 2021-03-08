@@ -54,9 +54,42 @@ const buildMessagePage = () => {
                 photoFront.setAttribute("alt", "Les parents de Guillaume en Martinique");
                 messageAuthor.innerHTML = "Catherine et Thierry";
                 messageAuthor.classList.add("card__message__author--long");
-                message.innerHTML = "";
+                message.innerHTML = "Tu es un rayon de soleil.<br /> Ne change surtout pas!<br /> Joyeux anniversaire,<br /> avec toute notre affection <i class='fas fa-heart'></i>";
                 audio.setAttribute("src", "../mus/darons.mp3");
                 break;   
+            case "morgane":
+                console.log("Message de Morgane");
+                pageTitle.innerHTML = "Morgane";
+                photoBack.setAttribute("src", "../img/morgane2.jpg");
+                photoBack.setAttribute("alt", "Marussia à Montréal, de dos avec son bonnet ours");
+                photoFront.setAttribute("src", "");
+                photoFront.setAttribute("alt", "");
+                messageAuthor.innerHTML = "Morgane";
+                message.innerHTML = "";
+                audio.setAttribute("src", "../mus/morgane.mp3");
+                break;   
+            case "bib":
+                console.log("Message de Briac");
+                pageTitle.innerHTML = "Briac";
+                photoBack.setAttribute("src", "");
+                photoBack.setAttribute("alt", "");
+                photoFront.setAttribute("src", "");
+                photoFront.setAttribute("alt", "");
+                messageAuthor.innerHTML = "Briac";
+                message.innerHTML = "";
+                audio.setAttribute("src", "../mus/bib.mp3");
+                break;
+            case "lucie":
+                console.log("Message de Lucie");
+                pageTitle.innerHTML = "Lucie";
+                photoBack.setAttribute("src", "../img/lucie2.jpeg");
+                photoBack.setAttribute("alt", "Lucie sur la plage en Gaspésie");
+                photoFront.setAttribute("src", "../img/lucie.jpeg");
+                photoFront.setAttribute("alt", "Lucie fait du kayak en Gaspésie");
+                messageAuthor.innerHTML = "Lucie";
+                message.innerHTML = "*WOUF*<br /> Je suis une saucisse qui aime sa maman même si j'attaque tout le monde, je me casse le dos et je mange des poubelles!";
+                audio.setAttribute("src", "../mus/lucie.mp3");
+                break;    
         } 
     };
 };

@@ -276,5 +276,8 @@ footer p {
   height: 100%;
   object-fit: cover;
 }
+.img.img--fill {
+  object-fit: fill;
+}
 
 /*# sourceMappingURL=style.css.map */

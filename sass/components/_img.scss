@@ -1,3 +1,6 @@
 .img {
     @include img-fill-space;
+    &.img--fill {
+        object-fit: fill;
+    }
 }
