@@ -126,6 +126,19 @@ const buildMessagePage = () => {
                 message.classList.add("card__message__txt--less-margin");
                 message.innerHTML = "On te souhaite un très bel anniversaire!<br /> On est heureux de connaître une fille rayonnante comme toi.<br /> La musique qu’on a choisie correspond à une story que tu avais mise quand on s’est rencontré la première fois en faisant nos roulettes <i class='fas fa-grin-alt'></i><br /> On a hâte d’avoir de nouveaux souvenirs avec toi.<br /> Ps: notre deuxième souvenir avec toi c’est ton mime de radar! F A M O U S<br /> Gros zoubiiiiii";
                 audio.setAttribute("src", "../mus/naomi.mp3");
+                break;
+            case "anais":
+                console.log("Message de Anaïs et Pierre");
+                pageTitle.innerHTML = "Anaïs et Pierre";
+                photoBack.setAttribute("src", "../img/anais2.jpg");
+                photoBack.setAttribute("alt", "Anaïs et Pierre avec un chat");
+                photoFront.setAttribute("src", "../img/anais.jpg");
+                photoFront.setAttribute("alt", "Anaïs et Pierre en combinaison à la plage");
+                messageAuthor.innerHTML = "Anaïs et Pierre";
+                message.classList.add("card__message__txt--less-margin");
+                message.classList.add("card__message__txt--sm");
+                message.innerHTML = "Marussia,<br /> Tu as débarqué dans notre vie, attirée par la Suze Tonic, au vernissage d’un artiste éminent de la scène locale. Forte de ton charisme et de ta joie de vivre, tu as convaincu l’assemblée du gratin nantais, belle perf! Première étape franchie avec succès, la seconde étape permettra au jury de confirmer ton entrée au NAONED SELECT CLUB. Tu en bonne voie mais des points restent à préciser :<br /> Une bonne humeur constante,<br /> Un crazy leg maîtrisé,<br /> Un style imparable.<br /><br /> Au plaisir,<br /> Continuez ainsi!";
+                audio.setAttribute("src", "../mus/anais.mp3");
                 break;    
         } 
     };
