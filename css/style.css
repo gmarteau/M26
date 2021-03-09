@@ -234,6 +234,10 @@ body {
     font-size: 1rem;
   }
 }
+.card__message__txt.card__message__txt--less-margin {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
 .card__audio {
   width: 50%;
 }

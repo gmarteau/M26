@@ -76,7 +76,8 @@ const buildMessagePage = () => {
                 photoFront.setAttribute("src", "");
                 photoFront.setAttribute("alt", "");
                 messageAuthor.innerHTML = "Briac";
-                message.innerHTML = "";
+                message.classList.add("card__message__txt--less-margin");
+                message.innerHTML = "Joyeux anniversaire Marussia!<br /> En prenant un peu de recul je réalise que l'on s'est rencontré il y a 4 ans déjà et pourtant on ne se connait pas si bien que ça. Cela n'empêche que tu m'as déjà apporté pas mal de positif dans ma vie, rien qu'en rendant mon cousin heureux ce qui n'était pas forcement gagné d'avance puis en me faisant découvrir Montréal aussi mais surtout, en me transmettant ton savoir en matière de magie noire!  J'ai hâte d'être enfin à Nantes l'année prochaine pour que l'on puisse se voir plus!";
                 audio.setAttribute("src", "../mus/bib.mp3");
                 break;
             case "lucie":
@@ -87,8 +88,44 @@ const buildMessagePage = () => {
                 photoFront.setAttribute("src", "../img/lucie.jpeg");
                 photoFront.setAttribute("alt", "Lucie fait du kayak en Gaspésie");
                 messageAuthor.innerHTML = "Lucie";
-                message.innerHTML = "*WOUF*<br /> Je suis une saucisse qui aime sa maman même si j'attaque tout le monde, je me casse le dos et je mange des poubelles!";
+                message.innerHTML = "*WOUF*<br /> Je suis une saucisse qui aime sa maman même si j'aboie sur tout le monde, je me casse le dos et je mange des poubelles!";
                 audio.setAttribute("src", "../mus/lucie.mp3");
+                break;
+            case "lalou":
+                console.log("Message de Lalou et Vicky");
+                pageTitle.innerHTML = "Lalou et Vicky";
+                photoBack.classList.add("img--fill");
+                photoBack.setAttribute("src", "../img/lalou3.jpg");
+                photoBack.setAttribute("alt", "Lalou et Vicky déguisés en Frida Kahlo");
+                photoFront.setAttribute("src", "../img/lalou.jpg");
+                photoFront.setAttribute("alt", "Lalou et Vicky déguisés sur un balcon à Montréal");
+                messageAuthor.innerHTML = "Lalou et Vicky";
+                message.classList.add("card__message__txt--less-margin");
+                message.innerHTML = "Wesh Maru !<br /> Bon bah of course que tu nous manques beaucoup beaucoup ! Moi (Lalou) je m’ennuie beaucoup de tes performances épiques (d’où le choix musical tu catch ?) ! Hâte de te retrouver cet été et de faire une grosse fête de non-anniversaire commun ! Aussi, ton anniversaire marquera à jamais la dernière fête du monde d’avant, ça fait une raison de plus pour se mettre à l’envers !<br /> Muchos besos et du gros love, on t’aime fort <i class='fas fa-heart'></i> <i class='fas fa-fire'></i>";
+                audio.setAttribute("src", "../mus/lalou.mp3");
+                break;
+            case "hugues":
+                console.log("Message de Hugues");
+                pageTitle.innerHTML = "Hugues";
+                photoBack.setAttribute("src", "../img/hugues2.jpg");
+                photoBack.setAttribute("alt", "Hugues boit du vin dans un pichet de festival en plastique");
+                photoFront.setAttribute("src", "../img/hugues.jpg");
+                photoFront.setAttribute("alt", "Hugues prend la pose en extérieur");
+                messageAuthor.innerHTML = "Hugues";
+                message.innerHTML = "";
+                audio.setAttribute("src", "../mus/hugues.mp3");
+                break;
+            case "naomi":
+                console.log("Message de Naomi et Steve");
+                pageTitle.innerHTML = "Naomi et Steve";
+                photoBack.setAttribute("src", "");
+                photoBack.setAttribute("alt", "");
+                photoFront.setAttribute("src", "../img/naomi.jpg");
+                photoFront.setAttribute("alt", "Naomi et Steve en vacances");
+                messageAuthor.innerHTML = "Naomi et Steve";
+                message.classList.add("card__message__txt--less-margin");
+                message.innerHTML = "On te souhaite un très bel anniversaire!<br /> On est heureux de connaître une fille rayonnante comme toi.<br /> La musique qu’on a choisie correspond à une story que tu avais mise quand on s’est rencontré la première fois en faisant nos roulettes <i class='fas fa-grin-alt'></i><br /> On a hâte d’avoir de nouveaux souvenirs avec toi.<br /> Ps: notre deuxième souvenir avec toi c’est ton mime de radar! F A M O U S<br /> Gros zoubiiiiii";
+                audio.setAttribute("src", "../mus/naomi.mp3");
                 break;    
         } 
     };
