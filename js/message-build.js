@@ -112,7 +112,7 @@ const buildMessagePage = () => {
                 photoFront.setAttribute("src", "../img/hugues.jpg");
                 photoFront.setAttribute("alt", "Hugues prend la pose en extérieur");
                 messageAuthor.innerHTML = "Hugues";
-                message.innerHTML = "";
+                message.innerHTML = "Bon anniversaire Marussia!<br />J'espère que le nom de l'interprète te plaira :D<br /><br />Indice: le nom de l'interprète c'est DANZIG.";
                 audio.setAttribute("src", "../mus/hugues.mp3");
                 break;
             case "naomi":
@@ -139,7 +139,32 @@ const buildMessagePage = () => {
                 message.classList.add("card__message__txt--sm");
                 message.innerHTML = "Marussia,<br /> Tu as débarqué dans notre vie, attirée par la Suze Tonic, au vernissage d’un artiste éminent de la scène locale. Forte de ton charisme et de ta joie de vivre, tu as convaincu l’assemblée du gratin nantais, belle perf! Première étape franchie avec succès, la seconde étape permettra au jury de confirmer ton entrée au NAONED SELECT CLUB. Tu en bonne voie mais des points restent à préciser :<br /> Une bonne humeur constante,<br /> Un crazy leg maîtrisé,<br /> Un style imparable.<br /><br /> Au plaisir,<br /> Continuez ainsi!";
                 audio.setAttribute("src", "../mus/anais.mp3");
-                break;    
+                break;  
+            case "william":
+                console.log("Message de William, Nanou et Anna");
+                pageTitle.innerHTML = "Papa, Nanou et Anna";
+                photoBack.setAttribute("src", "../img/william2.jpg");
+                photoBack.setAttribute("alt", "Marussia avec une couronne de roses");
+                photoFront.setAttribute("src", "");
+                photoFront.setAttribute("alt", "");
+                messageAuthor.classList.add("card__message__author--long");
+                messageAuthor.innerHTML = "Papa, Nanou et Anna";
+                message.classList.add("card__message__txt--less-margin");
+                message.innerHTML = "N’est-elle pas belle notre Marussia ? Ses jolis yeux verts, son petit sourire en coin ?<br />N’est-elle pas belle lorsqu’elle rit aux éclats ou lorsqu’elle se concentre sur son travail ?<br />N’est-elle pas belle lorsqu’elle s’interroge sur le sens de chaque chose, sur son devenir, du haut de ses 26 ans ?<br />Regardez son joli petit cœur, grand comme le monde, attentif à chacun.<br />Prenons soin d’elle !<br />Gros bisous et Joyeux anniversaire Marussia !";
+                audio.setAttribute("src", "../mus/william.mp3");
+                break; 
+            case "winnoc":
+                console.log("Message de Winnoc");
+                pageTitle.innerHTML = "Winnoc";
+                photoBack.classList.add("img--fill");
+                photoBack.setAttribute("src", "../img/winnoc2.jpg");
+                photoBack.setAttribute("alt", "Winnoc urine sur une haie");
+                photoFront.setAttribute("src", "../img/winnoc.jpg");
+                photoFront.setAttribute("alt", "Winnoc est chauve et beau-gosse");
+                messageAuthor.innerHTML = "Winnoc";
+                message.innerHTML = "Écoutez, moi je suis pas contre Marussia. Je trouve qu'elle pimente la vie. L'inconnu, c'est ce qui fascine le plus. L'Homme a besoin de points d'interrogation, ne serait-ce que pour s'en faire des porte-manteaux.<br />Biz";
+                audio.setAttribute("src", "../mus/winnoc.mp3");
+                break; 
         } 
     };
 };
