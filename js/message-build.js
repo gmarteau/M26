@@ -20,7 +20,7 @@ const buildMessagePage = () => {
                 photoFront.setAttribute("src", "../img/guillaume.jpg");
                 photoFront.setAttribute("alt", "Guillaume et Marussia sur la plage en Gaspésie");
                 messageAuthor.innerHTML = "Guillaume";
-                message.innerHTML = "C'est la cinquième fois que je te souhaite ton anniversaire aujourd'hui, et je suis toujours aussi excité, comme la première fois.<br /> Voilà mon petit cadeau fait-maison traditionnel, une déclaration d'amour collaborative! Pour que tu continues de rayonner dans ma vie et dans celles de tous tes amis et de ta famille.<br /> Je t'aime.<br /> Joyeux anniversaire <i class='fas fa-heart'></i>";
+                message.innerHTML = "C'est la cinquième fois que je te souhaite ton anniversaire aujourd'hui, et je suis toujours aussi excité, comme la première fois.<br /> Voilà mon petit cadeau fait-maison traditionnel: une déclaration d'amour collaborative! Pour que tu continues de rayonner dans ma vie et dans celles de tous tes amis et de ta famille.<br /> Je t'aime.<br /> Joyeux anniversaire <i class='fas fa-heart'></i>";
                 audio.setAttribute("src", "../mus/guillaume.mp3");
                 break;
             case "juliette":
@@ -165,6 +165,18 @@ const buildMessagePage = () => {
                 message.innerHTML = "Écoutez, moi je suis pas contre Marussia. Je trouve qu'elle pimente la vie. L'inconnu, c'est ce qui fascine le plus. L'Homme a besoin de points d'interrogation, ne serait-ce que pour s'en faire des porte-manteaux.<br />Biz";
                 audio.setAttribute("src", "../mus/winnoc.mp3");
                 break; 
+            case "morve":
+                console.log("Message de Morve");
+                pageTitle.innerHTML = "Morwenna";
+                photoBack.setAttribute("src", "../img/morve2.jpg");
+                photoBack.setAttribute("alt", "Le beau front de Morwenna en gros plan");
+                photoFront.setAttribute("src", "../img/morve.jpg");
+                photoFront.setAttribute("alt", "Morve dans son appartement");
+                messageAuthor.innerHTML = "Morve";
+                message.classList.add("card__message__txt--less-margin");
+                message.innerHTML = "Joyeux anniversaire!!<br />C'est une année qui sera sous le signe du renouveau, de la force et de l'épanouissement c'est certain! Je te souhaite d'être heureuse et de découvrir comment profiter de chaque instant sans penser au lendemain, tu mérites de vivre une vie épanouie!<br />Allez on se retrouve sur nos patins pour rider l'asphalte telle Lilith sortant des flammes de l'enfer. <i class='fas fa-sun'></i> <i class='fas fa-moon'></i>";
+                audio.setAttribute("src", "../mus/morve.mp3");
+                break;
         } 
     };
 };
