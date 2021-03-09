@@ -10,10 +10,15 @@
     position: relative;
     @include mobile-only {
         height: $hdr-height / 2;
-        font-size: map-get($map: $font-size, $key: med-plus);
+        font-size: 1rem;
     }
     > .title {
         font-size: 4rem;
+        @include mobile-only {
+            font-size: 1.2rem;
+            width: 75%;
+            text-align: center;
+        }
     }
     &__return {
         position: absolute;
@@ -32,6 +37,12 @@
         color: $clr-tertiary;
         @include mobile-only {
             height: $hdr-height / 2.4;
+        }
+    }
+    &__title {
+        @include mobile-only {
+            width: 50%;
+            text-align: center;
         }
     }
 }
