@@ -100,9 +100,10 @@ const buildMessagePage = () => {
                 photoBack.setAttribute("alt", "Lalou et Vicky déguisés en Frida Kahlo");
                 photoFront.setAttribute("src", "../img/lalou.jpg");
                 photoFront.setAttribute("alt", "Lalou et Vicky déguisés sur un balcon à Montréal");
+                messageAuthor.classList.add("card__message__author--long");
                 messageAuthor.innerHTML = "Lalou et Vicky";
                 message.classList.add("card__message__txt--less-margin");
-                message.innerHTML = "Wesh Maru !<br /> Bon bah of course que tu nous manques beaucoup beaucoup ! Moi (Lalou) je m’ennuie beaucoup de tes performances épiques (d’où le choix musical tu catch ?) ! Hâte de te retrouver cet été et de faire une grosse fête de non-anniversaire commun ! Aussi, ton anniversaire marquera à jamais la dernière fête du monde d’avant, ça fait une raison de plus pour se mettre à l’envers !<br /> Muchos besos et du gros love, on t’aime fort <i class='fas fa-heart'></i> <i class='fas fa-fire'></i>";
+                message.innerHTML = "Wesh Maru !<br /> Bon bah of course que tu nous manques beaucoup beaucoup ! Moi (Lalou) je m’ennuie beaucoup de tes performances épiques (d’où le choix musical tu catch ?) ! Hâte de te retrouver cet été et de faire une grosse fête de non-anniversaire commun ! Aussi, ton anniversaire marquera à jamais la dernière fête du monde d’avant, ça fait une raison de plus pour se mettre à l’envers !<br /> Muchos besos et du gros love, on t’aime fort ❤️🔥";
                 audio.setAttribute("src", "../mus/lalou.mp3");
                 break;
             case "hugues":
@@ -123,6 +124,7 @@ const buildMessagePage = () => {
                 photoBack.setAttribute("alt", "");
                 photoFront.setAttribute("src", "../img/naomi.jpg");
                 photoFront.setAttribute("alt", "Naomi et Steve en vacances");
+                messageAuthor.classList.add("card__message__author--long");
                 messageAuthor.innerHTML = "Naomi et Steve";
                 message.classList.add("card__message__txt--less-margin");
                 message.innerHTML = "On te souhaite un très bel anniversaire!<br /> On est heureux de connaître une fille rayonnante comme toi.<br /> La musique qu’on a choisie correspond à une story que tu avais mise quand on s’est rencontré la première fois en faisant nos roulettes <i class='fas fa-grin-alt'></i><br /> On a hâte d’avoir de nouveaux souvenirs avec toi.<br /> Ps: notre deuxième souvenir avec toi c’est ton mime de radar! F A M O U S<br /> Gros zoubiiiiii";
@@ -175,7 +177,7 @@ const buildMessagePage = () => {
                 photoFront.setAttribute("alt", "Morve dans son appartement");
                 messageAuthor.innerHTML = "Morve";
                 message.classList.add("card__message__txt--less-margin");
-                message.innerHTML = "Joyeux anniversaire!!<br />C'est une année qui sera sous le signe du renouveau, de la force et de l'épanouissement c'est certain! Je te souhaite d'être heureuse et de découvrir comment profiter de chaque instant sans penser au lendemain, tu mérites de vivre une vie épanouie!<br />Allez on se retrouve sur nos patins pour rider l'asphalte telle Lilith sortant des flammes de l'enfer. <i class='fas fa-sun'></i> <i class='fas fa-moon'></i>";
+                message.innerHTML = "Joyeux anniversaire!!<br />C'est une année qui sera sous le signe du renouveau, de la force et de l'épanouissement c'est certain! Je te souhaite d'être heureuse et de découvrir comment profiter de chaque instant sans penser au lendemain, tu mérites de vivre une vie épanouie!<br />Allez on se retrouve sur nos patins pour rider l'asphalte telle Lilith sortant des flammes de l'enfer. 🌞🌜";
                 audio.setAttribute("src", "../mus/morve.mp3");
                 break;
             case "anne":
@@ -203,6 +205,19 @@ const buildMessagePage = () => {
                 messageAuthor.innerHTML = "Sandrine et Mathieu";
                 message.innerHTML = "HAPPY B-DAYYYY MARU !!<br />Ma belle rencontre de 2020, une meuf bourrée de talent et qui mérite d'être connue (et REconnue ;) !) T'es la rideuse la plus coolos de l'Ouest, la relève de Tony Hawk est assurée ! Keep going ma biche, on t'embrasse fort et on te fait confiance pour fêter ça comme il se doit <i class='fas fa-kiss-wink-heart'></i><br /><br />Sandrine et Mathieu (les bébous) <i class='fas fa-heart'></i>";
                 audio.setAttribute("src", "../mus/sandrine.mp3");
+                break;
+            case "mailys":
+                console.log("Message de Maïlys");
+                pageTitle.innerHTML = "Maïlys";
+                photoBack.setAttribute("src", "../img/mailys2.jpg");
+                photoBack.setAttribute("alt", "Maïlys et Max déguisés");
+                photoFront.setAttribute("src", "../img/mailys.jpg");
+                photoFront.setAttribute("alt", "Selfie de Maïlys");
+                messageAuthor.innerHTML = "Maïlys";
+                message.classList.add("card__message__txt--less-margin");
+                message.classList.add("card__message__txt--xs");
+                message.innerHTML = "Chère Marussia,<br />Tu es quelqu’un d’extra. Merci d’être toi. <em>(ça rime)</em><br />N’oublie pas de continuer d’être la formidable personne que tu es, sans pareille ni égale. <em>(ça rime pas mais fallait quand même le dire)</em><br />On le sait, mais le redire fait toujours plaisir : je suis vraiment heureuse de te compter parmi mes amies. La distance et les années n’ont rien changé à la relation que nous entretenons. Et ça, ça n’a pas de prix. J’espère que l’on continuera encore longtemps à se forger de beaux souvenirs ensemble !<br />Je te souhaite un merveilleux anniversaire et une nouvelle année de ta vie pleine joie et de bonheur. Et de fêtes aussi. Je pense très fort à toi pour ce jour !<br />Happy birthday Maru, bisous de Max et moi 🌞💃🏼";
+                audio.setAttribute("src", "../mus/mailys.mp3");
                 break;
         } 
     };

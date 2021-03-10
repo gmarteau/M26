@@ -215,9 +215,12 @@ body {
   font-weight: normal;
   position: relative;
   width: max-content;
+  max-width: 100%;
+  margin-top: 0;
 }
 @media screen and (max-width: 599px) {
   .card__message__author {
+    margin-top: 25px;
     font-size: 2rem;
   }
 }
@@ -233,6 +236,12 @@ body {
 }
 .card__message__author.card__message__author--long {
   font-size: 2.5rem;
+}
+@media screen and (max-width: 599px) {
+  .card__message__author.card__message__author--long {
+    font-size: 2rem;
+    height: auto;
+  }
 }
 .card__message__txt {
   margin-top: 80px;
