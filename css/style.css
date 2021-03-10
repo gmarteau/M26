@@ -252,6 +252,9 @@ body {
   margin-bottom: 30px;
 }
 .card__message__txt.card__message__txt--sm {
+  font-size: 1rem;
+}
+.card__message__txt.card__message__txt--xs {
   font-size: 0.9rem;
 }
 .card__audio {

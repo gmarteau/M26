@@ -82,7 +82,10 @@
                 margin-bottom: 30px;
             }
             &.card__message__txt--sm {
-                font-size: map-get($map: $font-size, $key: med-min);
+                font-size: 1rem;
+            }
+            &.card__message__txt--xs {
+                font-size: .9rem;
             }
         }
     }

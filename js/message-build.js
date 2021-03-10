@@ -83,8 +83,9 @@ const buildMessagePage = () => {
             case "lucie":
                 console.log("Message de Lucie");
                 pageTitle.innerHTML = "Lucie";
-                photoBack.setAttribute("src", "../img/lucie2.jpeg");
-                photoBack.setAttribute("alt", "Lucie sur la plage en Gaspésie");
+                photoBack.setAttribute("src", "../img/lucie3.jpg");
+                photoBack.setAttribute("alt", "Marussia porte Lucie chiot au parc La Fontaine");
+                photoFront.classList.add("img--fill");
                 photoFront.setAttribute("src", "../img/lucie.jpeg");
                 photoFront.setAttribute("alt", "Lucie fait du kayak en Gaspésie");
                 messageAuthor.innerHTML = "Lucie";
@@ -136,7 +137,7 @@ const buildMessagePage = () => {
                 photoFront.setAttribute("alt", "Anaïs et Pierre en combinaison à la plage");
                 messageAuthor.innerHTML = "Anaïs et Pierre";
                 message.classList.add("card__message__txt--less-margin");
-                message.classList.add("card__message__txt--sm");
+                message.classList.add("card__message__txt--xs");
                 message.innerHTML = "Marussia,<br /> Tu as débarqué dans notre vie, attirée par la Suze Tonic, au vernissage d’un artiste éminent de la scène locale. Forte de ton charisme et de ta joie de vivre, tu as convaincu l’assemblée du gratin nantais, belle perf! Première étape franchie avec succès, la seconde étape permettra au jury de confirmer ton entrée au NAONED SELECT CLUB. Tu en bonne voie mais des points restent à préciser :<br /> Une bonne humeur constante,<br /> Un crazy leg maîtrisé,<br /> Un style imparable.<br /><br /> Au plaisir,<br /> Continuez ainsi!";
                 audio.setAttribute("src", "../mus/anais.mp3");
                 break;  
@@ -176,6 +177,32 @@ const buildMessagePage = () => {
                 message.classList.add("card__message__txt--less-margin");
                 message.innerHTML = "Joyeux anniversaire!!<br />C'est une année qui sera sous le signe du renouveau, de la force et de l'épanouissement c'est certain! Je te souhaite d'être heureuse et de découvrir comment profiter de chaque instant sans penser au lendemain, tu mérites de vivre une vie épanouie!<br />Allez on se retrouve sur nos patins pour rider l'asphalte telle Lilith sortant des flammes de l'enfer. <i class='fas fa-sun'></i> <i class='fas fa-moon'></i>";
                 audio.setAttribute("src", "../mus/morve.mp3");
+                break;
+            case "anne":
+                console.log("Message de Anne et Léo");
+                pageTitle.innerHTML = "Anne et Léo";
+                photoBack.classList.add("img--fill");
+                photoBack.setAttribute("src", "../img/anne2.jpeg");
+                photoBack.setAttribute("alt", "Anne et Léo avec un air sérieux");
+                photoFront.classList.add("img--fill");
+                photoFront.setAttribute("src", "../img/anne.jpeg");
+                photoFront.setAttribute("alt", "Anne et Léo sont de sacrés déconneurs");
+                messageAuthor.innerHTML = "Anne et Léo";
+                message.classList.add("card__message__txt--sm");
+                message.innerHTML = "Sept mois de séparation ont passé.<br />Il en faudra plus pour tuer notre amitié !<br />Un célèbre proverbe a dit « Loin des yeux près du cœur »,<br />Tu verras qu’on en sortira vainqueur !<br /><br />Maru, nous te souhaitons un très bel anniversaire !<br />Certes, à notre manière…<br />Vivement que l’on se serre à nouveau dans les bras,<br />Au gré de la musique (et des apéros) on festoiera !";
+                audio.setAttribute("src", "../mus/anne.mp3");
+                break;
+            case "sandrine":
+                console.log("Message de Sandrine et Mathieu");
+                pageTitle.innerHTML = "Sandrine et Mathieu";
+                photoBack.setAttribute("src", "../img/sandrine2.jpg");
+                photoBack.setAttribute("alt", "Sandrine et Mathieu en riders");
+                photoFront.setAttribute("src", "../img/sandrine.jpg");
+                photoFront.setAttribute("alt", "Sandrine et Mathieu en amoureux");
+                messageAuthor.classList.add("card__message__author--long");
+                messageAuthor.innerHTML = "Sandrine et Mathieu";
+                message.innerHTML = "HAPPY B-DAYYYY MARU !!<br />Ma belle rencontre de 2020, une meuf bourrée de talent et qui mérite d'être connue (et REconnue ;) !) T'es la rideuse la plus coolos de l'Ouest, la relève de Tony Hawk est assurée ! Keep going ma biche, on t'embrasse fort et on te fait confiance pour fêter ça comme il se doit <i class='fas fa-kiss-wink-heart'></i><br /><br />Sandrine et Mathieu (les bébous) <i class='fas fa-heart'></i>";
+                audio.setAttribute("src", "../mus/sandrine.mp3");
                 break;
         } 
     };
