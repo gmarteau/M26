@@ -10,7 +10,7 @@ body {
 .content {
   width: 100%;
   margin: auto;
-  background: #FBF59B;
+  background: #F4A698;
 }
 .content.content--message {
   padding-top: 80px;
@@ -46,11 +46,11 @@ body {
 }
 .header {
   height: 200px;
-  background-color: #111036;
+  background-color: #dd614a;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #92DCE5;
+  color: #3E2F5B;
   font-size: 2.5rem;
   font-family: "oktabold_italic", sans-serif;
   position: relative;
@@ -75,7 +75,7 @@ body {
   position: absolute;
   top: 2rem;
   left: 4rem;
-  color: #92DCE5;
+  color: #3E2F5B;
   font-size: 2rem;
 }
 @media screen and (max-width: 599px) {
@@ -87,7 +87,7 @@ body {
 }
 .header.header--return {
   height: 120px;
-  color: #FBF59B;
+  color: #F4A698;
 }
 @media screen and (max-width: 599px) {
   .header.header--return {
@@ -121,12 +121,12 @@ body {
 .grid__item {
   width: 15%;
   height: 250px;
-  background-color: #111036;
+  background-color: #dd614a;
   margin-bottom: 62.5px;
   border-radius: 2rem;
   overflow: hidden;
-  box-shadow: -1rem 1rem #92DCE5;
-  border: solid 5px #92DCE5;
+  box-shadow: -1rem 1rem #3E2F5B;
+  border: solid 5px #3E2F5B;
   position: relative;
 }
 @media screen and (max-width: 599px) {
@@ -134,8 +134,8 @@ body {
     width: 47%;
     height: 150px;
     margin-bottom: 25px;
-    box-shadow: -0.5rem 0.5rem #92DCE5;
-    border: solid 3px #92DCE5;
+    box-shadow: -0.5rem 0.5rem #3E2F5B;
+    border: solid 3px #3E2F5B;
   }
 }
 .grid__item__opac {
@@ -157,11 +157,11 @@ body {
   height: 800px;
   display: flex;
   justify-content: space-around;
-  background-color: #92DCE5;
-  color: #111036;
+  background-color: #3E2F5B;
+  color: #F4A698;
   border-radius: 2rem;
-  border: solid 7px #111036;
-  box-shadow: -2rem 2rem #111036;
+  border: solid 7px #dd614a;
+  box-shadow: -3rem 3rem #dd614a;
   font-family: "mattoneregular", sans-serif;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -172,14 +172,14 @@ body {
     justify-content: flex-start;
     width: 90%;
     height: auto;
-    box-shadow: -0.5rem 0.5rem #111036;
-    border: solid 5px #111036;
+    box-shadow: -0.5rem 0.5rem #dd614a;
+    border: solid 5px #dd614a;
     padding: 20px;
   }
 }
 .card__pic {
   width: 40%;
-  border: solid 5px #FBF59B;
+  border: solid 5px #F4A698;
   border-radius: 2rem;
   overflow: hidden;
   position: relative;
@@ -231,7 +231,7 @@ body {
   height: 5px;
   left: 0;
   bottom: -20px;
-  background-color: #FBF59B;
+  background-color: #dd614a;
   border-radius: 2rem;
 }
 .card__message__author.card__message__author--long {
@@ -276,13 +276,13 @@ body {
 }
 
 footer {
-  background-color: #111036;
+  background-color: #dd614a;
   height: 200px;
   font-family: "mattoneregular", sans-serif;
   padding-top: 100px;
   padding-bottom: 100px;
   font-size: 1rem;
-  color: #92DCE5;
+  color: #3E2F5B;
 }
 @media screen and (max-width: 599px) {
   footer {

@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-around;
     background-color: $clr-secondary;
-    color: $clr-primary;
+    color: $clr-tertiary;
     border-radius: $card-radius;
     border: solid 7px $clr-primary;
     @include card-shadow;
@@ -63,7 +63,7 @@
                 height: 5px;
                 left: 0;
                 bottom: -20px;
-                background-color: $clr-tertiary;
+                background-color: $clr-primary;
                 border-radius: 2rem;
             }
             &.card__message__author--long {
