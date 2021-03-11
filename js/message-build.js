@@ -65,7 +65,9 @@ const buildMessagePage = () => {
                 photoFront.setAttribute("src", "");
                 photoFront.setAttribute("alt", "");
                 messageAuthor.innerHTML = "Morgane";
-                message.innerHTML = "";
+                message.classList.add("card__message__txt--less-margin");
+                message.classList.add("card__message__txt--sm");
+                message.innerHTML = "Coucou ma poulette,<br />Je suis heureuse de te voir évoluer dans ce que tu aimes... Prends soin de toi car nous en avons besoin pour apporter tout l’amour autour de nous... Sois à l’écoute mais pas trop, ambitieuse et consciente de la chance que tu peux déjà avoir... Je te souhaite le meilleur et bien plus encore ! Contente de recréer quelque chose avec toi...<br />Excellent anniversaire ma belle Marussia 🎂<br />Kiss kiss love love<br />*Ta Ta MoOommo qu’est-ce qu’elle a sous son gros boOnnNet 🙂";
                 audio.setAttribute("src", "../mus/morgane.mp3");
                 break;   
             case "bib":
@@ -148,8 +150,8 @@ const buildMessagePage = () => {
                 pageTitle.innerHTML = "Papa, Nanou et Anna";
                 photoBack.setAttribute("src", "../img/william2.jpg");
                 photoBack.setAttribute("alt", "Marussia avec une couronne de roses");
-                photoFront.setAttribute("src", "");
-                photoFront.setAttribute("alt", "");
+                photoFront.setAttribute("src", "../img/william.jpg");
+                photoFront.setAttribute("alt", "Selfie de William, Nanou et Anna");
                 messageAuthor.classList.add("card__message__author--long");
                 messageAuthor.innerHTML = "Papa, Nanou et Anna";
                 message.classList.add("card__message__txt--less-margin");
@@ -218,6 +220,18 @@ const buildMessagePage = () => {
                 message.classList.add("card__message__txt--xs");
                 message.innerHTML = "Chère Marussia,<br />Tu es quelqu’un d’extra. Merci d’être toi. <em>(ça rime)</em><br />N’oublie pas de continuer d’être la formidable personne que tu es, sans pareille ni égale. <em>(ça rime pas mais fallait quand même le dire)</em><br />On le sait, mais le redire fait toujours plaisir : je suis vraiment heureuse de te compter parmi mes amies. La distance et les années n’ont rien changé à la relation que nous entretenons. Et ça, ça n’a pas de prix. J’espère que l’on continuera encore longtemps à se forger de beaux souvenirs ensemble !<br />Je te souhaite un merveilleux anniversaire et une nouvelle année de ta vie pleine joie et de bonheur. Et de fêtes aussi. Je pense très fort à toi pour ce jour !<br />Happy birthday Maru, bisous de Max et moi 🌞💃🏼";
                 audio.setAttribute("src", "../mus/mailys.mp3");
+                break;
+            case "kevin":
+                console.log("Message de Kévin et Romane");
+                pageTitle.innerHTML = "Kévin et Romane";
+                photoBack.setAttribute("src", "../img/kevin2.jpeg");
+                photoBack.setAttribute("alt", "Kévin et Romane mangent une religieuse");
+                photoFront.setAttribute("src", "../img/kevin.jpeg");
+                photoFront.setAttribute("alt", "Kévin et Romane mangent un éclair");
+                messageAuthor.classList.add("card__message__author--long");
+                messageAuthor.innerHTML = "Kévin et Romane";
+                message.innerHTML = "Après l’éclair, vivement la religieuse de la boulangerie blanche !<br /><br />Joyeux anniversaire Marussia ! À toi et tes lasagnes végés.<br /><br />Bisous 😘";
+                audio.setAttribute("src", "../mus/kevin.mp3");
                 break;
         } 
     };
