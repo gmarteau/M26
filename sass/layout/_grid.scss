@@ -1,15 +1,16 @@
 .grid {
-    width: 80%;
+    width: 87%;
     margin: auto;
     height: auto;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     @include section-padding;
     @include mobile-only {
         padding-top: $section-padding / 3;
         padding-bottom: $section-padding / 3;
         width: 85%;
+        justify-content: space-between;
     }
     &__item {
         width: $item-width;
@@ -17,6 +18,8 @@
         background-color: $clr-primary;
         margin-bottom: $item-height / 4;
         border-radius: $item-radius;
+        margin-left: $item-margin-x;
+        margin-right: $item-margin-x;
         overflow: hidden;
         @include item-style;
         position: relative;
@@ -24,6 +27,8 @@
             width: $item-width-mobile;
             height: $item-height-mobile;
             margin-bottom: $item-height-mobile / 6;
+            margin-left: 0;
+            margin-right: 0;
             @include item-style-mobile;
         }
         &__opac {

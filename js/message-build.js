@@ -314,6 +314,18 @@ const buildMessagePage = () => {
                 message.innerHTML = "";
                 audio.setAttribute("src", "../mus/daphne.mp3");
                 break;
+            case "tan":
+                console.log("Message de Antoine et Coralie");
+                pageTitle.innerHTML = "Antoine et Coralie";
+                photoBack.setAttribute("src", "../img/tan2.jpg");
+                photoBack.setAttribute("alt", "Antoine et Coralie avec leurs masques");
+                photoFront.setAttribute("src", "../img/tan.jpg");
+                photoFront.setAttribute("alt", "Antoine et Coralie en sortie bateau");
+                messageAuthor.classList.add("card__message__author--long");
+                messageAuthor.innerHTML = "Antoine et Coralie";
+                message.innerHTML = "Coucou Marussia,<br />Alors déjà: Joyeuuuux anniversaire!!!<br />Nous sommes super contents de votre retour et de pouvoir être avec vous à Nantes. Alors même si nous ne sommes pas là ce week end on fête ça très vite et passe un anniversaire du feu de dieu!<br />Pleiiiins de bisous, poutous !!";
+                audio.setAttribute("src", "../mus/tan.mp3");
+                break;
         } 
     };
 };
