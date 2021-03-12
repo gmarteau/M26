@@ -62,8 +62,8 @@ const buildMessagePage = () => {
                 pageTitle.innerHTML = "Morgane";
                 photoBack.setAttribute("src", "../img/morgane2.jpg");
                 photoBack.setAttribute("alt", "Marussia à Montréal, de dos avec son bonnet ours");
-                photoFront.setAttribute("src", "");
-                photoFront.setAttribute("alt", "");
+                photoFront.setAttribute("src", "../img/morgane.jpg");
+                photoFront.setAttribute("alt", "Morgane et son chat");
                 messageAuthor.innerHTML = "Morgane";
                 message.classList.add("card__message__txt--less-margin");
                 message.classList.add("card__message__txt--sm");
@@ -232,6 +232,87 @@ const buildMessagePage = () => {
                 messageAuthor.innerHTML = "Kévin et Romane";
                 message.innerHTML = "Après l’éclair, vivement la religieuse de la boulangerie blanche !<br /><br />Joyeux anniversaire Marussia ! À toi et tes lasagnes végés.<br /><br />Bisous 😘";
                 audio.setAttribute("src", "../mus/kevin.mp3");
+                break;
+            case "arseny":
+                console.log("Message de Arseny et Maddison");
+                pageTitle.innerHTML = "Arseny et Maddison";
+                photoBack.setAttribute("src", "../img/arseny2.jpg");
+                photoBack.setAttribute("alt", "Maddison et son chat");
+                photoFront.setAttribute("src", "../img/arseny.jpg");
+                photoFront.setAttribute("alt", "Arseny et son chat");
+                messageAuthor.classList.add("card__message__author--long");
+                messageAuthor.innerHTML = "Arseny et Maddison";
+                message.innerHTML = "Toi mon soleil de grâce en qui s'évanouit<br />La visible senteur des louanges humaines";
+                audio.setAttribute("src", "../mus/arseny.mp3");
+                break;
+            case "charlotte":
+                console.log("Message de Charlotte");
+                pageTitle.innerHTML = "Charlotte";
+                photoBack.setAttribute("src", "../img/charlotte2.jpg");
+                photoBack.setAttribute("alt", "Charlotte et Marussia dans un élevage de poulets");
+                photoFront.setAttribute("src", "../img/charlotte.jpg");
+                photoFront.setAttribute("alt", "Charlotte et Marussia à Ogunquit");
+                messageAuthor.innerHTML = "Charlotte";
+                message.innerHTML = "Bon anniv Maru!!<br />Je m’ennuie trop de toi, j’espère que tout va bien de ton côté! Promis juré, je viens te visiter quand cette merde sera finie, ou toi viens ici hihi 😉 Je nous imagine encore en train de danser comme des folles au concert d’Aya Nakamura (ok, même s’il a été annulé) d’où mon superbe choix de musique 🔥<br />Bisous et profite bien xx";
+                audio.setAttribute("src", "../mus/charlotte.mp3");
+                break;
+            case "tim":
+                console.log("Message de Tim et Renato");
+                pageTitle.innerHTML = "Tim et Renato";
+                photoBack.classList.add("img--fill");
+                photoBack.setAttribute("src", "../img/tim2.jpg");
+                photoBack.setAttribute("alt", "Tim et Renato flous");
+                photoFront.setAttribute("src", "../img/tim.jpg");
+                photoFront.setAttribute("alt", "Tim et Renato avec un filtre couronne");
+                messageAuthor.classList.add("card__message__author--long");
+                messageAuthor.innerHTML = "Tim et Renato";
+                message.classList.add("card__message__txt--xs");
+                message.innerHTML = "Joyeux anniversaire Marussssssiaaaaaaaaaa!<br />First thing first, you need a shot right now to celebrate. I need pictures for proof.<br />J'espère que la chanson qui joue te rappelle notre magnifique soirée débauche au Maïs because I have a great video of this perfect moment of u dancing on the tables hahaha.<br />I miss you guys en tabarouette, hopefully we can recreate a moment like this soon (en France hopefully, I need to travel, partir d'icitte seigneur).<br />Lots of love, ptit shot de vodka pour te célébrer, aweille un tit deuxième pour toi aussi.<br />bisousssss";
+                audio.setAttribute("src", "../mus/tim.mp3");
+                break;
+            case "rudy":
+                console.log("Message de Rudy");
+                pageTitle.innerHTML = "Rudy";
+                photoBack.setAttribute("src", "../img/rudy2.jpg");
+                photoBack.setAttribute("alt", "Rudy avec un filtre pantin de cirque");
+                photoFront.setAttribute("src", "../img/rudy.jpg");
+                photoFront.setAttribute("alt", "Rudy dans une forêt enneigée");
+                messageAuthor.innerHTML = "Rudy";
+                message.innerHTML = "Bwananiversaiiiiire Maruuuu!<br />J’espère que tu vas bien, que ta nouvelle vie nantaise te plaît. Ton rire manque à Montréal!! Hâte de passer vous voir une fois ce Covid derrière nous!<br />A bientôt et très bonne fête à toi !!!!";
+                audio.setAttribute("src", "../mus/rudy.mp3");
+                break;
+            case "catherine":
+                console.log("Message de Catherine");
+                pageTitle.innerHTML = "Maman";
+                photoBack.setAttribute("src", "../img/catherine2.jpg");
+                photoBack.setAttribute("alt", "Marussia et sa mère en vacances");
+                photoFront.setAttribute("src", "../img/catherine.jpg");
+                photoFront.setAttribute("alt", "Marussia et sa mère complices");
+                messageAuthor.innerHTML = "Maman";
+                message.innerHTML = "";
+                audio.setAttribute("src", "../mus/catherine.mp3");
+                break;
+            case "lila":
+                console.log("Message de Lila-May");
+                pageTitle.innerHTML = "Lila-May";
+                photoBack.setAttribute("src", "../img/lila2.jpg");
+                photoBack.setAttribute("alt", "Marussia joue avec Lila bébé");
+                photoFront.setAttribute("src", "../img/lila.jpg");
+                photoFront.setAttribute("alt", "Marussia et ses soeurs Lila et Juliette");
+                messageAuthor.innerHTML = "Lila-May";
+                message.innerHTML = "";
+                audio.setAttribute("src", "../mus/lila.mp3");
+                break;
+            case "daphne":
+                console.log("Message de Daphné");
+                pageTitle.innerHTML = "Daphné";
+                photoBack.setAttribute("src", "../img/daphne2.jpg");
+                photoBack.setAttribute("alt", "Marussia porte Daphné comme dans le roi lion");
+                photoFront.setAttribute("src", "../img/daphne.jpg");
+                photoFront.setAttribute("alt", "Marussia fait jouer du ukulélé à Daphné");
+                messageAuthor.innerHTML = "Daphné";
+                message.innerHTML = "";
+                audio.setAttribute("src", "../mus/daphne.mp3");
                 break;
         } 
     };
