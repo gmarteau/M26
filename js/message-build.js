@@ -122,8 +122,8 @@ const buildMessagePage = () => {
             case "naomi":
                 console.log("Message de Naomi et Steve");
                 pageTitle.innerHTML = "Naomi et Steve";
-                photoBack.setAttribute("src", "");
-                photoBack.setAttribute("alt", "");
+                photoBack.setAttribute("src", "../img/naomi2.jpg");
+                photoBack.setAttribute("alt", "Naomi et Steve en patins");
                 photoFront.setAttribute("src", "../img/naomi.jpg");
                 photoFront.setAttribute("alt", "Naomi et Steve en vacances");
                 messageAuthor.classList.add("card__message__author--long");
@@ -325,6 +325,29 @@ const buildMessagePage = () => {
                 messageAuthor.innerHTML = "Antoine et Coralie";
                 message.innerHTML = "Coucou Marussia,<br />Alors déjà: Joyeuuuux anniversaire!!!<br />Nous sommes super contents de votre retour et de pouvoir être avec vous à Nantes. Alors même si nous ne sommes pas là ce week end on fête ça très vite et passe un anniversaire du feu de dieu!<br />Pleiiiins de bisous, poutous !!";
                 audio.setAttribute("src", "../mus/tan.mp3");
+                break;
+            case "alex":
+                console.log("Message de Alex");
+                pageTitle.innerHTML = "Alex";
+                photoBack.setAttribute("src", "../img/alex2.jpg");
+                photoBack.setAttribute("alt", "Alex devant une photo du postérieur de Marussia");
+                photoFront.setAttribute("src", "../img/alex.jpg");
+                photoFront.setAttribute("alt", "Alex, Marussia et Guillaume en soirée");
+                messageAuthor.innerHTML = "Alex";
+                message.innerHTML = "";
+                audio.setAttribute("src", "../mus/alex.mp3");
+                break;
+            case "bulle":
+                console.log("Message de Bulle et Sam");
+                pageTitle.innerHTML = "Bulle et Sam";
+                photoBack.setAttribute("src", "../img/bulle2.jpg");
+                photoBack.setAttribute("alt", "Josie au soleil sur le canapé");
+                photoFront.setAttribute("src", "../img/bulle.jpg");
+                photoFront.setAttribute("alt", "Josie assise");
+                messageAuthor.classList.add("card__message__author--long");
+                messageAuthor.innerHTML = "Bulle et Sam";
+                message.innerHTML = "La plus belle des fleurs te souhaite un magnifique anniversaire. Bon là elle est encore grassouillette mais promis elle fait des efforts. Tu es sa voisine préférée et on est bien d'accord !<br />Plein de belles soirées clandestines à venir pour la team Belzunce ❤";
+                audio.setAttribute("src", "../mus/bulle.mp3");
                 break;
         } 
     };
