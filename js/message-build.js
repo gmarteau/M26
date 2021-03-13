@@ -73,10 +73,10 @@ const buildMessagePage = () => {
             case "bib":
                 console.log("Message de Briac");
                 pageTitle.innerHTML = "Briac";
-                photoBack.setAttribute("src", "");
-                photoBack.setAttribute("alt", "");
-                photoFront.setAttribute("src", "");
-                photoFront.setAttribute("alt", "");
+                photoBack.setAttribute("src", "../img/bib2.jpg");
+                photoBack.setAttribute("alt", "Briac fait semblant de sniffer de la cocaïne");
+                photoFront.setAttribute("src", "../img/bib.jpg");
+                photoFront.setAttribute("alt", "Selfie de Briac");
                 messageAuthor.innerHTML = "Briac";
                 message.classList.add("card__message__txt--less-margin");
                 message.innerHTML = "Joyeux anniversaire Marussia!<br /> En prenant un peu de recul je réalise que l'on s'est rencontré il y a 4 ans déjà et pourtant on ne se connait pas si bien que ça. Cela n'empêche que tu m'as déjà apporté pas mal de positif dans ma vie, rien qu'en rendant mon cousin heureux ce qui n'était pas forcement gagné d'avance puis en me faisant découvrir Montréal aussi mais surtout, en me transmettant ton savoir en matière de magie noire!  J'ai hâte d'être enfin à Nantes l'année prochaine pour que l'on puisse se voir plus!";
@@ -289,7 +289,8 @@ const buildMessagePage = () => {
                 photoFront.setAttribute("src", "../img/catherine.jpg");
                 photoFront.setAttribute("alt", "Marussia et sa mère complices");
                 messageAuthor.innerHTML = "Maman";
-                message.innerHTML = "";
+                message.classList.add("card__message__txt--less-margin");
+                message.innerHTML = "Mon enfant, mon ange, ma beauté, ma fierté... je pense à toi et avec tout mon amour tous les jours depuis 26 ans, tu es ma grande, mon premier bébé, je t’aime si fort comme tu n’en as pas idée... mon « petit mini me » avec tes 15 cm au dessus de moi !! (mais comment as-tu fait cela ?!)<br />Je te souhaite mon ange un merveilleux anniversaire rempli de bonheur, de rires et de tendresse... Kocham cie ♥️<br />Ta petite mamounette";
                 audio.setAttribute("src", "../mus/catherine.mp3");
                 break;
             case "lila":
@@ -300,7 +301,7 @@ const buildMessagePage = () => {
                 photoFront.setAttribute("src", "../img/lila.jpg");
                 photoFront.setAttribute("alt", "Marussia et ses soeurs Lila et Juliette");
                 messageAuthor.innerHTML = "Lila-May";
-                message.innerHTML = "";
+                message.innerHTML = "Ma Ma..ssia à moi, tu es ma grande sœur adorée... tu t’es blottie contre moi lorsque j’étais bébé, je m’en souviens encore... tu es ma grande sœur adorée... je t’aime fort pour l’éternité !! ♥️<br />Joyeux anniversaire ma grande poupée 🥰";
                 audio.setAttribute("src", "../mus/lila.mp3");
                 break;
             case "daphne":
@@ -311,7 +312,7 @@ const buildMessagePage = () => {
                 photoFront.setAttribute("src", "../img/daphne.jpg");
                 photoFront.setAttribute("alt", "Marussia fait jouer du ukulélé à Daphné");
                 messageAuthor.innerHTML = "Daphné";
-                message.innerHTML = "";
+                message.innerHTML = "Tu as traumatisé ma vie de petit chien .. entre piscine tsunami, rallye de vélo et cours de philo cachée dans ton sac... j’en ai vécu des choses à tes côtés !! Mais je crois que j’ai aimé ça !! Un peu grâce à toi que mon petit cœur a voltigé... tu sais quoi... je t’aime waaaaf waaaf ♥️";
                 audio.setAttribute("src", "../mus/daphne.mp3");
                 break;
             case "tan":
@@ -334,7 +335,7 @@ const buildMessagePage = () => {
                 photoFront.setAttribute("src", "../img/alex.jpg");
                 photoFront.setAttribute("alt", "Alex, Marussia et Guillaume en soirée");
                 messageAuthor.innerHTML = "Alex";
-                message.innerHTML = "";
+                message.innerHTML = "<i class='fas fa-guitar'></i><i class='fas fa-music'></i> Joyeux anniversaire Marussia<br />Tu es une fille géniale<br />Tu me manques beaucoup<br />Reviens à Montréaaal! <i class='fas fa-music'></i> <i class='fas fa-guitar'></i><br /><br />Joyeux anniversaire, je t'aime fort!!";
                 audio.setAttribute("src", "../mus/alex.mp3");
                 break;
             case "bulle":
