@@ -335,7 +335,7 @@ const buildMessagePage = () => {
                 photoFront.setAttribute("src", "../img/alex.jpg");
                 photoFront.setAttribute("alt", "Alex, Marussia et Guillaume en soirée");
                 messageAuthor.innerHTML = "Alex";
-                message.innerHTML = "<i class='fas fa-guitar'></i><i class='fas fa-music'></i> Joyeux anniversaire Marussia<br />Tu es une fille géniale<br />Tu me manques beaucoup<br />Reviens à Montréaaal! <i class='fas fa-music'></i> <i class='fas fa-guitar'></i><br /><br />Joyeux anniversaire, je t'aime fort!!";
+                message.innerHTML = "Joyeux anniversaire Maru,<br />Je t'offre un beau gâteau à distance, comme il y a deux ans.<br />J'espère que tout va bien, je t'aime fort ❤️";
                 audio.setAttribute("src", "../mus/alex.mp3");
                 break;
             case "bulle":
@@ -349,6 +349,18 @@ const buildMessagePage = () => {
                 messageAuthor.innerHTML = "Bulle et Sam";
                 message.innerHTML = "La plus belle des fleurs te souhaite un magnifique anniversaire. Bon là elle est encore grassouillette mais promis elle fait des efforts. Tu es sa voisine préférée et on est bien d'accord !<br />Plein de belles soirées clandestines à venir pour la team Belzunce ❤";
                 audio.setAttribute("src", "../mus/bulle.mp3");
+                break;
+            case "alban":
+                console.log("Message de Alban et Caroline");
+                pageTitle.innerHTML = "Alban et Caroline";
+                photoBack.setAttribute("src", "../img/alban2.jpeg");
+                photoBack.setAttribute("alt", "Alban, Caroline, Marussia et Guillaume sur le navibus à Nantes");
+                photoFront.setAttribute("src", "../img/alban.jpeg");
+                photoFront.setAttribute("alt", "JAlban, Caroline, Marussia et Guillaume sur la terrasse du 4371 rue de Mentana");
+                messageAuthor.classList.add("card__message__author--long");
+                messageAuthor.innerHTML = "Alban et Caroline";
+                message.innerHTML = "Un très joyeux anniversaire Maru!!!<br />Super contents de vous retrouver dans le 44 après cette belle rencontre à Montréal...<br />Plein de Love de nous deux!";
+                audio.setAttribute("src", "../mus/alban.mp3");
                 break;
         } 
     };
