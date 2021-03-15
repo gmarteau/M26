@@ -1,7 +1,7 @@
 .card {
     width: 70%;
     margin: auto;
-    height: $card-height;
+    height: auto;
     display: flex;
     justify-content: space-around;
     background-color: $clr-secondary;
@@ -29,7 +29,7 @@
         position: relative;
         @include mobile-only {
             width: 100%;
-            height: $card-height / 3;
+            height: 270px;
         }
         &__opac {
             @include div-fill-container;

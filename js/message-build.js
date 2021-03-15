@@ -356,11 +356,22 @@ const buildMessagePage = () => {
                 photoBack.setAttribute("src", "../img/alban2.jpeg");
                 photoBack.setAttribute("alt", "Alban, Caroline, Marussia et Guillaume sur le navibus à Nantes");
                 photoFront.setAttribute("src", "../img/alban.jpeg");
-                photoFront.setAttribute("alt", "JAlban, Caroline, Marussia et Guillaume sur la terrasse du 4371 rue de Mentana");
+                photoFront.setAttribute("alt", "Alban, Caroline, Marussia et Guillaume sur la terrasse du 4371 rue de Mentana");
                 messageAuthor.classList.add("card__message__author--long");
                 messageAuthor.innerHTML = "Alban et Caroline";
                 message.innerHTML = "Un très joyeux anniversaire Maru!!!<br />Super contents de vous retrouver dans le 44 après cette belle rencontre à Montréal...<br />Plein de Love de nous deux!";
                 audio.setAttribute("src", "../mus/alban.mp3");
+                break;
+            case "lolo":
+                console.log("Message de Lorenzo");
+                pageTitle.innerHTML = "Lorenzo";
+                photoBack.setAttribute("src", "../img/lolo2.jpg");
+                photoBack.setAttribute("alt", "Selfie de Lolo qui plisse les yeux");
+                photoFront.setAttribute("src", "../img/lolo.jpg");
+                photoFront.setAttribute("alt", "Selfie de Lolo dehors avec son manteau d'hiver");
+                messageAuthor.innerHTML = "Lorenzo";
+                message.innerHTML = "Coucou Maru, un mega bel anniversaire!!! Tu me manques beaucoup, j’ai super hâte de vous voir Guillaume et toi, dès que ce sera possible!!<br />Profite bien du beau temps et de toutes les chouettes choses de la vie, je suis certain que ça va être une belle année, où tu vas t’épanouir dans tous tes projets!!!";
+                audio.setAttribute("src", "../mus/lolo.mp3");
                 break;
         } 
     };
