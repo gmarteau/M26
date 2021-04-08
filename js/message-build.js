@@ -373,6 +373,19 @@ const buildMessagePage = () => {
                 message.innerHTML = "Coucou Maru, un mega bel anniversaire!!! Tu me manques beaucoup, j’ai super hâte de vous voir Guillaume et toi, dès que ce sera possible!!<br />Profite bien du beau temps et de toutes les chouettes choses de la vie, je suis certain que ça va être une belle année, où tu vas t’épanouir dans tous tes projets!!!";
                 audio.setAttribute("src", "../mus/lolo.mp3");
                 break;
+            case "lazare":
+                console.log("Message de Lazare");
+                pageTitle.innerHTML = "Lazare";
+                photoBack.setAttribute("src", "../img/lazare2.png");
+                photoBack.setAttribute("alt", "Lazare et une meuf que je ne connais pas");
+                photoFront.setAttribute("src", "../img/lazare.png");
+                photoFront.setAttribute("alt", "Lazare et un chat");
+                messageAuthor.innerHTML = "Lazare";
+                message.classList.add("card__message__txt--less-margin");
+                message.classList.add("card__message__txt--xs");
+                message.innerHTML = "Petit (gros) bon anniv en retard (même si rattrapé sur messenger plus tard mais ça compte pas). Pour changer j'ai envie de faire un petit récap depuis que tu m'as (très très gentiment) accueilli quand j'étais en galère à Montréal. J'ai rencontré grâce à toi pleins de gens hyper chouettes et j'ai pu réussir à décompresser de l'horrible année que j'avais passée précédemment. Tu étais une bouée de sauvetage lorsque je suis arrivé ici très clairement pour moi alors qu'on se connaissait si peu et je te remercie, toi et ta gentilesse, ton accueil et tout ce que t'as fait pour moi (même indirectement) pour me motiver et aller de l'avant. On n'oublie pas le frère Marteau qui est devenu le pote qui m'a beaucoup aidé à 'tenir' également quand j'étais ici et avec qui je m'entendais si bien ce qui m'a aussi beaucoup permis de m'épanouir là-bas malgré les démons que j'avais en moi. Je suis heureux que vous ayez des projets ensemble, que vous vous aimiez si fort maintenant.<br />Merci encore Marussia pour tout, j'espère que je t'ai apporté au moins 25% du bonheur que tu m'as apporté au total durant ce séjour et j'espère (j'en suis sûr) que ça continuera et qu'on se reverra avec Guillaume cet été quand tout ça se sera calmé.<br />Bel anniversaire encore et je t'embrasse fort.";
+                audio.setAttribute("src", "../mus/lazare.mp3");
+                break;
         } 
     };
 };
